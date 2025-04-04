@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DavoDev - Tecnologías Web Modernas</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts - Press Start 2P para estilo retro -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-dark text-success">
+    <!-- Barra de navegación fija -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-terminal"></i> DavoDev
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-apis.html">Web APIs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="microservicios.html">Microservicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="desarrollo-api.html"
+                >Desarrollo de Web API</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contenedores.html">Contenedores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nube.html">Aplicaciones en la Nube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section
+      class="bg-black text-success py-5 mt-5 border-bottom border-success"
+    >
+      <div class="container text-center py-5">
+        <h1 class="display-4 fw-bold mb-4">DavoDev</h1>
+        <p class="lead">
+          Proyecto Integrador Parcial 2 - Sitio Web Informativo
+        </p>
+        <button
+          class="btn btn-outline-success mt-4 fw-bold"
+          data-bs-toggle="modal"
+          data-bs-target="#bienvenidaModal"
+        >
+          <i class="fas fa-info-circle"></i> INFORMACION
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal de Bienvenida -->
+    <div
+      class="modal fade"
+      id="bienvenidaModal"
+      tabindex="-1"
+      aria-labelledby="bienvenidaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-success border border-success">
+          <div class="modal-header bg-black border-bottom border-success">
+            <h5 class="modal-title fw-bold" id="bienvenidaModalLabel">
+              SISTEMA INICIADO
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  class="img-fluid rounded border border-success"
+                  alt="Tecnologías Web"
+                />
+              </div>
+              <div class="col-md-6">
+                <h4 class="fw-bold mb-3">CARGANDO DATOS...</h4>
+                <p>Este sistema contiene información sobre:</p>
+                <ul>
+                  <li>Tecnologías de Web APIs</li>
+                  <li>Arquitectura de Microservicios</li>
+                  <li>Desarrollo de Web APIs</li>
+                  <li>Manejo de Contenedores (Docker y Kubernetes)</li>
+                  <li>Desarrollo de aplicaciones para la nube</li>
+                </ul>
+                <p>Seleccione un módulo para continuar...</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top border-success">
+            <button
+              type="button"
+              class="btn btn-outline-success"
+              data-bs-dismiss="modal"
+            >
+              CERRAR
+            </button>
+            <a href="web-apis.html" class="btn btn-outline-success"
+              >INICIAR EXPLORACIÓN</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de características principales -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center border-bottom border-success pb-3 mb-5">
+          <h2 class="fw-bold mb-4">MÓDULOS DISPONIBLES</h2>
+          <p>Seleccione un módulo para explorar</p>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body text-center">
+                <i class="fas fa-code text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">Web APIs</h4>
+                <p class="card-text">
+                  Interfaces de programación que permiten la comunicación entre
+                  diferentes sistemas de software.
+                </p>
+                <a href="web-apis.html" class="btn btn-outline-success mt-3"
+                  >EXPLORAR</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body text-center">
+                <i class="fas fa-cubes text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">Microservicios</h4>
+                <p class="card-text">
+                  Arquitectura que estructura una aplicación como una colección
+                  de servicios independientes.
+                </p>
+                <a
+                  href="microservicios.html"
+                  class="btn btn-outline-success mt-3"
+                  >EXPLORAR</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body text-center">
+                <i class="fas fa-cogs text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">Desarrollo de Web API</h4>
+                <p class="card-text">
+                  Proceso y mejores prácticas para crear APIs web efectivas y
+                  seguras.
+                </p>
+                <a
+                  href="desarrollo-api.html"
+                  class="btn btn-outline-success mt-3"
+                  >EXPLORAR</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body text-center">
+                <i class="fas fa-box text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">Contenedores</h4>
+                <p class="card-text">
+                  Tecnologías como Docker y Kubernetes que revolucionan el
+                  despliegue de aplicaciones.
+                </p>
+                <a href="contenedores.html" class="btn btn-outline-success mt-3"
+                  >EXPLORAR</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body text-center">
+                <i class="fas fa-cloud text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">Aplicaciones en la Nube</h4>
+                <p class="card-text">
+                  Desarrollo de aplicaciones modernas para entornos
+                  cloud-native.
+                </p>
+                <a href="nube.html" class="btn btn-outline-success mt-3"
+                  >EXPLORAR</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-success py-4 border-top border-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">DavoDev</h5>
+            <p>
+              Un recurso educativo para comprender las tecnologías web actuales,
+              incluyendo microservicios, contenedores y APIs.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">ENLACES</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-success">Inicio</a></li>
+              <li><a href="web-apis.html" class="text-success">Web APIs</a></li>
+              <li>
+                <a href="microservicios.html" class="text-success"
+                  >Microservicios</a
+                >
+              </li>
+              <li>
+                <a href="desarrollo-api.html" class="text-success"
+                  >Desarrollo de Web API</a
+                >
+              </li>
+              <li>
+                <a href="contenedores.html" class="text-success"
+                  >Contenedores</a
+                >
+              </li>
+              <li>
+                <a href="nube.html" class="text-success"
+                  >Aplicaciones en la Nube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">RECURSOS</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://www.ibm.com/mx-es/topics/microservices"
+                  class="text-success"
+                  target="_blank"
+                  >IBM: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://aws.amazon.com/es/microservices/"
+                  class="text-success"
+                  target="_blank"
+                  >AWS: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cloud.google.com/learn/what-are-containers"
+                  class="text-success"
+                  target="_blank"
+                  >Google Cloud: Contenedores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kubernetes.io/es/docs/concepts/architecture/"
+                  class="text-success"
+                  target="_blank"
+                  >Kubernetes: Arquitectura</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.docker.com/"
+                  class="text-success"
+                  target="_blank"
+                  >Docker</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 border-success" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2023 DavoDev. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-success me-3">Política de privacidad</a>
+            <a href="#" class="text-success">Términos de uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+  </body>
+</html>
