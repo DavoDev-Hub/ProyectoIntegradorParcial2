@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DavoDev - Tecnologías Web Modernas</title>
+    <title>Web APIs - DavoDev</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome para iconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="bg-dark text-success">
+    <!-- Barra de navegación fija -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success fixed-top"
     >
@@ -39,10 +38,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-apis.html">Web APIs</a>
+              <a class="nav-link active" href="web-apis.html">Web APIs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="microservicios.html">Microservicios</a>
@@ -66,169 +65,154 @@
       </div>
     </nav>
 
-    <!-- Sección de inicio -->
-    <section
+    <!-- Encabezado de página -->
+    <header
       class="bg-black text-success py-5 mt-5 border-bottom border-success"
     >
-      <div class="container text-center py-5">
-        <h1 class="display-4 fw-bold mb-4">DavoDev</h1>
+      <div class="container text-center py-4">
+        <h1 class="fw-bold mb-4">TECNOLOGÍAS DE WEB APIs</h1>
         <p class="lead">
-          Proyecto Integrador Parcial 2 - Sitio Web Informativo
+          Comprendiendo las interfaces de programación de aplicaciones web
         </p>
-        <button
-          class="btn btn-outline-success mt-4 fw-bold"
-          data-bs-toggle="modal"
-          data-bs-target="#bienvenidaModal"
-        >
-          <i class="fas fa-info-circle"></i> INFORMACION
-        </button>
       </div>
-    </section>
+    </header>
 
-    <!-- Modal de Bienvenida -->
-    <div
-      class="modal fade"
-      id="bienvenidaModal"
-      tabindex="-1"
-      aria-labelledby="bienvenidaModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content bg-dark text-success border border-success">
-          <div class="modal-header bg-black border-bottom border-success">
-            <h5 class="modal-title fw-bold" id="bienvenidaModalLabel">
-              SISTEMA INICIADO
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                  class="img-fluid rounded border border-success"
-                  alt="Tecnologías Web"
-                />
-              </div>
-              <div class="col-md-6">
-                <h4 class="fw-bold mb-3">CARGANDO DATOS...</h4>
-                <p>Este sistema contiene información sobre:</p>
-                <ul>
-                  <li>Tecnologías de Web APIs</li>
-                  <li>Arquitectura de Microservicios</li>
-                  <li>Desarrollo de Web APIs</li>
-                  <li>Manejo de Contenedores (Docker y Kubernetes)</li>
-                  <li>Desarrollo de aplicaciones para la nube</li>
-                </ul>
-                <p>Seleccione un módulo para continuar...</p>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer border-top border-success">
-            <button
-              type="button"
-              class="btn btn-outline-success"
-              data-bs-dismiss="modal"
-            >
-              CERRAR
-            </button>
-            <a href="web-apis.html" class="btn btn-outline-success"
-              >INICIAR EXPLORACIÓN</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sección de características principales -->
+    <!-- Contenido principal -->
     <section class="py-5">
       <div class="container">
-        <div class="text-center border-bottom border-success pb-3 mb-5">
-          <h2 class="fw-bold mb-4">MÓDULOS DISPONIBLES</h2>
-          <p>Seleccione un módulo para explorar</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4">¿QUÉ ES UNA API?</h3>
+            <p>
+              Una API (interfaz de programación de aplicaciones) es un conjunto
+              de reglas definidas que permiten que diferentes aplicaciones se
+              comuniquen entre sí. Actúa como una capa intermedia que procesa
+              las transferencias de datos entre sistemas.
+            </p>
+
+            <p>
+              Según Amazon Web Services (2023), las APIs son mecanismos que
+              permiten a dos componentes de software comunicarse entre sí
+              mediante un conjunto de definiciones y protocolos.
+            </p>
+
+            <div
+              class="bg-black text-success p-3 border border-success rounded mb-4"
+            >
+              <p class="fw-bold mb-2">GET /api/users HTTP/1.1</p>
+              <p class="mb-1">Host: api.example.com</p>
+              <p class="mb-1">Authorization: Bearer token123</p>
+              <p class="mb-0">Accept: application/json</p>
+            </div>
+
+            <h4 class="fw-bold mt-4 mb-3">EJEMPLOS DE APIs POPULARES:</h4>
+            <ul>
+              <li>Las API de Google: Búsqueda, Gmail, Traductor o Maps</li>
+              <li>PayPal para procesamiento de pagos</li>
+              <li>API para incrustar videos de YouTube</li>
+              <li>WhatsApp Business API</li>
+              <li>APIs de redes sociales como Instagram y Facebook</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="card mb-4 bg-dark border border-success">
+              <img
+                src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                class="card-img-top border-bottom border-success"
+                alt="API Concept"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">FUNCIONAMIENTO DE UNA API</h5>
+                <p class="card-text">
+                  Las APIs funcionan como intermediarios entre diferentes
+                  sistemas, permitiendo que se comuniquen y compartan datos de
+                  manera eficiente y segura.
+                </p>
+              </div>
+            </div>
+
+            <div class="ratio ratio-16x9 border border-success">
+              <iframe
+                src="https://www.youtube.com/embed/s7wmiS2mSXY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
 
         <div class="row mt-5">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4">
             <div class="card h-100 bg-dark border border-success">
               <div class="card-body text-center">
-                <i class="fas fa-code text-success fs-1 mb-3"></i>
-                <h4 class="card-title fw-bold">Web APIs</h4>
+                <i class="fas fa-exchange-alt text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">REST APIs</h4>
                 <p class="card-text">
-                  Interfaces de programación que permiten la comunicación entre
-                  diferentes sistemas de software.
+                  Las APIs REST (Representational State Transfer) son un estilo
+                  de arquitectura para diseñar aplicaciones en red. Utilizan
+                  métodos HTTP estándar como GET, POST, PUT y DELETE.
                 </p>
-                <a href="web-apis.html" class="btn btn-outline-success mt-3"
-                  >EXPLORAR</a
-                >
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4">
             <div class="card h-100 bg-dark border border-success">
               <div class="card-body text-center">
-                <i class="fas fa-cubes text-success fs-1 mb-3"></i>
-                <h4 class="card-title fw-bold">Microservicios</h4>
+                <i class="fas fa-server text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">SOAP APIs</h4>
                 <p class="card-text">
-                  Arquitectura que estructura una aplicación como una colección
-                  de servicios independientes.
+                  SOAP (Simple Object Access Protocol) es un protocolo de
+                  mensajería que permite a los programas que se ejecutan en
+                  diferentes sistemas operativos comunicarse.
                 </p>
-                <a
-                  href="microservicios.html"
-                  class="btn btn-outline-success mt-3"
-                  >EXPLORAR</a
-                >
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4">
             <div class="card h-100 bg-dark border border-success">
               <div class="card-body text-center">
-                <i class="fas fa-cogs text-success fs-1 mb-3"></i>
-                <h4 class="card-title fw-bold">Desarrollo de Web API</h4>
+                <i class="fas fa-plug text-success fs-1 mb-3"></i>
+                <h4 class="card-title fw-bold">GraphQL</h4>
                 <p class="card-text">
-                  Proceso y mejores prácticas para crear APIs web efectivas y
-                  seguras.
+                  GraphQL es un lenguaje de consulta para APIs y un tiempo de
+                  ejecución para cumplir esas consultas con los datos
+                  existentes, ofreciendo mayor flexibilidad que REST.
                 </p>
-                <a
-                  href="desarrollo-api.html"
-                  class="btn btn-outline-success mt-3"
-                  >EXPLORAR</a
-                >
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-dark border border-success">
-              <div class="card-body text-center">
-                <i class="fas fa-box text-success fs-1 mb-3"></i>
-                <h4 class="card-title fw-bold">Contenedores</h4>
-                <p class="card-text">
-                  Tecnologías como Docker y Kubernetes que revolucionan el
-                  despliegue de aplicaciones.
-                </p>
-                <a href="contenedores.html" class="btn btn-outline-success mt-3"
-                  >EXPLORAR</a
-                >
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="card bg-dark border border-success">
+              <div class="card-header bg-black border-bottom border-success">
+                <h4 class="mb-0 fw-bold">RESPUESTA JSON TÍPICA</h4>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-dark border border-success">
-              <div class="card-body text-center">
-                <i class="fas fa-cloud text-success fs-1 mb-3"></i>
-                <h4 class="card-title fw-bold">Aplicaciones en la Nube</h4>
-                <p class="card-text">
-                  Desarrollo de aplicaciones modernas para entornos
-                  cloud-native.
-                </p>
-                <a href="nube.html" class="btn btn-outline-success mt-3"
-                  >EXPLORAR</a
+              <div class="card-body">
+                <pre
+                  class="bg-black text-success p-3 border border-success rounded mb-0"
+                >
+{
+  "status": "success",
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com"
+      }
+    ]
+  }
+}
+                            </pre
                 >
               </div>
             </div>

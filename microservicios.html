@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microservicios - DavoDev</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-success">
+    <!-- Barra de navegación fija -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-terminal"></i> DavoDev
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-apis.html">Web APIs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="microservicios.html"
+                >Microservicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="desarrollo-api.html"
+                >Desarrollo de Web API</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contenedores.html">Contenedores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nube.html">Aplicaciones en la Nube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Encabezado de página -->
+    <header
+      class="bg-black text-success py-5 mt-5 border-bottom border-success"
+    >
+      <div class="container text-center py-4">
+        <h1 class="fw-bold mb-4">MICROSERVICIOS</h1>
+        <p class="lead">Un enfoque moderno para el desarrollo de software</p>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4">¿QUÉ SON LOS MICROSERVICIOS?</h3>
+            <p>
+              Los microservicios son un enfoque arquitectónico y organizativo
+              para el desarrollo de software donde el software está compuesto
+              por pequeños servicios independientes que se comunican a través de
+              APIs bien definidas. Estos servicios son propiedad de equipos
+              pequeños e independientes.
+            </p>
+
+            <p>
+              Según AWS, "Los microservicios son un enfoque arquitectónico en el
+              que una aplicación se construye como una colección de servicios
+              pequeños y autónomos que se ejecutan en su propio proceso y se
+              comunican mediante mecanismos ligeros, a menudo una API de
+              recursos HTTP."
+            </p>
+
+            <h4 class="fw-bold mt-4 mb-3">CARACTERÍSTICAS PRINCIPALES:</h4>
+            <ul>
+              <li>Servicios organizados en torno a capacidades de negocio</li>
+              <li>Implementación y escalado independientes</li>
+              <li>Autonomía y descentralización</li>
+              <li>Aislamiento de fallos</li>
+              <li>Evolución tecnológica independiente</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Microservicios"
+              class="img-fluid rounded mb-4"
+            />
+
+            <div class="card bg-dark border border-success mb-4">
+              <div class="card-header bg-black border-bottom border-success">
+                <h5 class="mb-0 fw-bold">MONOLITO VS. MICROSERVICIOS</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h6 class="text-center fw-bold">Arquitectura Monolítica</h6>
+                    <ul>
+                      <li>Aplicación única y unificada</li>
+                      <li>Despliegue completo para cada cambio</li>
+                      <li>Escalado de toda la aplicación</li>
+                      <li>Un solo punto de fallo</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h6 class="text-center fw-bold">
+                      Arquitectura de Microservicios
+                    </h6>
+                    <ul>
+                      <li>Servicios pequeños e independientes</li>
+                      <li>Despliegue independiente</li>
+                      <li>Escalado selectivo</li>
+                      <li>Fallos aislados</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ratio ratio-16x9 border border-success">
+              <iframe
+                src="https://www.youtube.com/embed/y8OnoxKotPQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">
+                  VENTAJAS DE LOS MICROSERVICIOS
+                </h4>
+                <ul>
+                  <li>Desarrollo más rápido y eficiente</li>
+                  <li>Escalabilidad mejorada</li>
+                  <li>Resiliencia y tolerancia a fallos</li>
+                  <li>Flexibilidad tecnológica</li>
+                  <li>Despliegue independiente</li>
+                  <li>Equipos autónomos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">
+                  DESAFÍOS DE LOS MICROSERVICIOS
+                </h4>
+                <ul>
+                  <li>Complejidad distribuida</li>
+                  <li>Gestión de datos entre servicios</li>
+                  <li>Pruebas de integración más complejas</li>
+                  <li>Monitoreo y depuración</li>
+                  <li>Sobrecarga de red</li>
+                  <li>Consistencia eventual</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-success py-4 border-top border-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">DavoDev</h5>
+            <p>
+              Un recurso educativo para comprender las tecnologías web actuales,
+              incluyendo microservicios, contenedores y APIs.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">ENLACES</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-success">Inicio</a></li>
+              <li><a href="web-apis.html" class="text-success">Web APIs</a></li>
+              <li>
+                <a href="microservicios.html" class="text-success"
+                  >Microservicios</a
+                >
+              </li>
+              <li>
+                <a href="desarrollo-api.html" class="text-success"
+                  >Desarrollo de Web API</a
+                >
+              </li>
+              <li>
+                <a href="contenedores.html" class="text-success"
+                  >Contenedores</a
+                >
+              </li>
+              <li>
+                <a href="nube.html" class="text-success"
+                  >Aplicaciones en la Nube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">RECURSOS</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://www.ibm.com/mx-es/topics/microservices"
+                  class="text-success"
+                  target="_blank"
+                  >IBM: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://aws.amazon.com/es/microservices/"
+                  class="text-success"
+                  target="_blank"
+                  >AWS: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cloud.google.com/learn/what-are-containers"
+                  class="text-success"
+                  target="_blank"
+                  >Google Cloud: Contenedores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kubernetes.io/es/docs/concepts/architecture/"
+                  class="text-success"
+                  target="_blank"
+                  >Kubernetes: Arquitectura</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.docker.com/"
+                  class="text-success"
+                  target="_blank"
+                  >Docker</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 border-success" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2023 DavoDev. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-success me-3">Política de privacidad</a>
+            <a href="#" class="text-success">Términos de uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

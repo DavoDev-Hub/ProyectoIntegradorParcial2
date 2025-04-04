@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollo de Web API - DavoDev</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-success">
+    <!-- Barra de navegación fija -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-terminal"></i> DavoDev
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-apis.html">Web APIs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="microservicios.html">Microservicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="desarrollo-api.html"
+                >Desarrollo de Web API</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contenedores.html">Contenedores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nube.html">Aplicaciones en la Nube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Encabezado de página -->
+    <header
+      class="bg-black text-success py-5 mt-5 border-bottom border-success"
+    >
+      <div class="container text-center py-4">
+        <h1 class="fw-bold mb-4">DESARROLLO DE UNA WEB API</h1>
+        <p class="lead">
+          Proceso y mejores prácticas para crear APIs efectivas
+        </p>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4">
+              RECOMENDACIONES PARA EL DESARROLLO DE APIs
+            </h3>
+
+            <div class="card mb-4 bg-dark border border-success">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  1. Definir los objetivos de la API
+                </h5>
+                <p class="card-text">
+                  Antes de comenzar a desarrollar la API, es fundamental tener
+                  una comprensión clara de los problemas que intentará resolver
+                  y los usuarios a los que servirá.
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-4 bg-dark border border-success">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  2. Seguir estándares y convenciones
+                </h5>
+                <p class="card-text">
+                  Es importante seguir los estándares y convenciones de la
+                  industria al desarrollar una API web. Esto facilita la
+                  comprensión y el uso de la API por parte de otros
+                  desarrolladores, por ejemplo seguir los principios de REST,
+                  utilizar JSON o XML como formatos de intercambio de datos,
+                  etc.
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-4 bg-dark border border-success">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  3. Documentar la API de manera exhaustiva
+                </h5>
+                <p class="card-text">
+                  La documentación clara y completa de la API es esencial para
+                  que otros desarrolladores puedan entender cómo usarla
+                  correctamente. Se pueden utilizar herramientas como Swagger o
+                  Postman para generar documentación automáticamente.
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-4 bg-dark border border-success">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">4. Priorizar la seguridad</h5>
+                <p class="card-text">
+                  La seguridad es un aspecto crucial en el desarrollo de las
+                  APIs web. Se deben implementar medidas de seguridad como
+                  autenticación y autorización para proteger la API de accesos
+                  no autorizados.
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-4 bg-dark border border-success">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">5. Versionar la API</h5>
+                <p class="card-text">
+                  A medida que la API evoluciona, es importante mantener la
+                  compatibilidad hacia atrás. Versionar la API permite
+                  introducir cambios sin afectar a los usuarios existentes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4">PROCESO DE DESARROLLO DE UNA WEB API</h3>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">1. Análisis de requerimientos</h5>
+                    <p class="mb-0">
+                      Identificar los requisitos funcionales y no funcionales de
+                      la API, incluidos los casos de uso y los datos que se
+                      manipularán.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">2. Planificación</h5>
+                    <p class="mb-0">
+                      Definición de los objetivos del proyecto, asignación de
+                      recursos, estimación de tiempos y costos, y definición de
+                      la metodología de desarrollo a utilizar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">3. Diseño de la API</h5>
+                    <p class="mb-0">
+                      Definir los endpoints, métodos HTTP admitidos, parámetros
+                      de solicitud y respuesta, y esquema de autenticación.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">4. Implementación</h5>
+                    <p class="mb-0">
+                      Desarrollar la API siguiendo el diseño definido,
+                      utilizando herramientas y frameworks adecuados como
+                      Express.js para Node.js o Flask para Python.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-vial"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">5. Pruebas</h5>
+                    <p class="mb-0">
+                      Realizar pruebas unitarias y de integración para
+                      garantizar que la API funcione según lo esperado y que
+                      maneje adecuadamente los errores.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">6. Documentación</h5>
+                    <p class="mb-0">
+                      Crear documentación clara y detallada de la API, incluidos
+                      ejemplos de uso y casos de error.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 bg-dark border border-success">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div
+                    class="bg-black text-success rounded-circle p-3 me-3 border border-success"
+                  >
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold">7. Despliegue</h5>
+                    <p class="mb-0">
+                      Implementar la API en un entorno de producción, asegurando
+                      que esté disponible y escalable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="card bg-dark border border-success">
+              <div class="card-header bg-black border-bottom border-success">
+                <h4 class="mb-0 fw-bold">
+                  EJEMPLO DE ENDPOINTS EN UNA API DE BLOG
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-dark table-striped table-bordered border-success"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Endpoint</th>
+                        <th>Método HTTP</th>
+                        <th>Descripción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>/posts</td>
+                        <td>GET</td>
+                        <td>
+                          Obtener una lista de todos los posts o artículos
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>/posts</td>
+                        <td>POST</td>
+                        <td>Crear un nuevo post</td>
+                      </tr>
+                      <tr>
+                        <td>/posts/{id}</td>
+                        <td>GET</td>
+                        <td>Obtener un post específico por su ID</td>
+                      </tr>
+                      <tr>
+                        <td>/posts/{id}</td>
+                        <td>PUT</td>
+                        <td>Actualizar un post existente</td>
+                      </tr>
+                      <tr>
+                        <td>/posts/{id}</td>
+                        <td>DELETE</td>
+                        <td>Eliminar un post específico</td>
+                      </tr>
+                      <tr>
+                        <td>/comments</td>
+                        <td>GET</td>
+                        <td>Obtener todos los comentarios</td>
+                      </tr>
+                      <tr>
+                        <td>/comments/{id}</td>
+                        <td>GET</td>
+                        <td>Obtener un comentario específico</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-success py-4 border-top border-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">DavoDev</h5>
+            <p>
+              Un recurso educativo para comprender las tecnologías web actuales,
+              incluyendo microservicios, contenedores y APIs.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">ENLACES</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-success">Inicio</a></li>
+              <li><a href="web-apis.html" class="text-success">Web APIs</a></li>
+              <li>
+                <a href="microservicios.html" class="text-success"
+                  >Microservicios</a
+                >
+              </li>
+              <li>
+                <a href="desarrollo-api.html" class="text-success"
+                  >Desarrollo de Web API</a
+                >
+              </li>
+              <li>
+                <a href="contenedores.html" class="text-success"
+                  >Contenedores</a
+                >
+              </li>
+              <li>
+                <a href="nube.html" class="text-success"
+                  >Aplicaciones en la Nube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">RECURSOS</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://www.ibm.com/mx-es/topics/microservices"
+                  class="text-success"
+                  target="_blank"
+                  >IBM: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://aws.amazon.com/es/microservices/"
+                  class="text-success"
+                  target="_blank"
+                  >AWS: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cloud.google.com/learn/what-are-containers"
+                  class="text-success"
+                  target="_blank"
+                  >Google Cloud: Contenedores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kubernetes.io/es/docs/concepts/architecture/"
+                  class="text-success"
+                  target="_blank"
+                  >Kubernetes: Arquitectura</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.docker.com/"
+                  class="text-success"
+                  target="_blank"
+                  >Docker</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 border-success" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2023 DavoDev. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-success me-3">Política de privacidad</a>
+            <a href="#" class="text-success">Términos de uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

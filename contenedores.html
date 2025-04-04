@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contenedores - DavoDev</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-success">
+    <!-- Barra de navegación fija -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-terminal"></i> DavoDev
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-apis.html">Web APIs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="microservicios.html">Microservicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="desarrollo-api.html"
+                >Desarrollo de Web API</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contenedores.html"
+                >Contenedores</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nube.html">Aplicaciones en la Nube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Encabezado de página -->
+    <header
+      class="bg-black text-success py-5 mt-5 border-bottom border-success"
+    >
+      <div class="container text-center py-4">
+        <h1 class="fw-bold mb-4">CONTENEDORES</h1>
+        <p class="lead">
+          Tecnologías que revolucionan el despliegue de aplicaciones
+        </p>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-4">¿QUÉ SON LOS CONTENEDORES?</h3>
+            <p>
+              Los contenedores son unidades ejecutables de software en las que
+              se empaqueta el código de la aplicación junto con sus bibliotecas
+              y dependencias, de manera que se puede ejecutar en cualquier
+              entorno.
+            </p>
+
+            <p>
+              A diferencia de las máquinas virtuales, los contenedores
+              virtualizan el sistema operativo en lugar del hardware, lo que los
+              hace más ligeros y portátiles.
+            </p>
+
+            <div
+              class="bg-black text-success p-3 border border-success rounded mb-4"
+            >
+              <p class="fw-bold mb-2">$ docker run -d -p 80:80 nginx</p>
+              <p class="mb-0 small">
+                Este comando ejecuta un contenedor de Nginx en segundo plano,
+                mapeando el puerto 80 del host al puerto 80 del contenedor.
+              </p>
+            </div>
+
+            <h4 class="fw-bold mt-4 mb-3">BENEFICIOS DE LOS CONTENEDORES:</h4>
+            <ul>
+              <li>Portabilidad: funcionan igual en cualquier entorno</li>
+              <li>
+                Eficiencia: utilizan menos recursos que las máquinas virtuales
+              </li>
+              <li>Aislamiento: las aplicaciones no interfieren entre sí</li>
+              <li>
+                Escalabilidad: fácil de escalar horizontal y verticalmente
+              </li>
+              <li>Velocidad: se inician en segundos</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1605745341112-85968b19335b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              class="img-fluid rounded border border-success mb-4"
+              alt="Contenedores"
+            />
+
+            <div class="card bg-dark border border-success mb-4">
+              <div class="card-header bg-black border-bottom border-success">
+                <h5 class="mb-0 fw-bold">
+                  MÁQUINAS VIRTUALES VS. CONTENEDORES
+                </h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h6 class="text-center fw-bold">Máquinas Virtuales</h6>
+                    <ul>
+                      <li>Virtualizan hardware</li>
+                      <li>Incluyen sistema operativo completo</li>
+                      <li>Mayor consumo de recursos</li>
+                      <li>Arranque más lento</li>
+                      <li>Mayor aislamiento</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h6 class="text-center fw-bold">Contenedores</h6>
+                    <ul>
+                      <li>Virtualizan el SO</li>
+                      <li>Comparten el kernel del host</li>
+                      <li>Menor consumo de recursos</li>
+                      <li>Arranque en segundos</li>
+                      <li>Aislamiento a nivel de proceso</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ratio ratio-16x9 border border-success">
+              <iframe
+                src="https://www.youtube.com/embed/0qotVMX-J5s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-header bg-black border-bottom border-success">
+                <h4 class="mb-0 fw-bold">DOCKER</h4>
+              </div>
+              <div class="card-body">
+                <div class="text-center mb-3">
+                  <i class="fab fa-docker text-success fs-1"></i>
+                </div>
+                <p>
+                  Docker es una plataforma de código abierto que facilita la
+                  creación, implementación y ejecución de aplicaciones en
+                  contenedores. Proporciona un conjunto de herramientas que
+                  permiten a los desarrolladores empaquetar aplicaciones y sus
+                  dependencias en un contenedor virtual.
+                </p>
+                <h5 class="fw-bold mt-3">Componentes principales:</h5>
+                <ul>
+                  <li>
+                    <strong>Docker Engine:</strong> El motor que permite crear y
+                    ejecutar contenedores
+                  </li>
+                  <li>
+                    <strong>Docker Hub:</strong> Repositorio de imágenes de
+                    contenedores
+                  </li>
+                  <li>
+                    <strong>Dockerfile:</strong> Archivo de configuración para
+                    crear imágenes
+                  </li>
+                  <li>
+                    <strong>Docker Compose:</strong> Herramienta para definir y
+                    ejecutar aplicaciones multi-contenedor
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 bg-dark border border-success">
+              <div class="card-header bg-black border-bottom border-success">
+                <h4 class="mb-0 fw-bold">KUBERNETES</h4>
+              </div>
+              <div class="card-body">
+                <div class="text-center mb-3">
+                  <i class="fas fa-dharmachakra text-success fs-1"></i>
+                </div>
+                <p>
+                  Kubernetes (K8s) es una plataforma de código abierto para
+                  automatizar la implementación, el escalado y la gestión de
+                  aplicaciones en contenedores. Fue originalmente diseñado por
+                  Google y ahora es mantenido por la Cloud Native Computing
+                  Foundation.
+                </p>
+                <h5 class="fw-bold mt-3">Características principales:</h5>
+                <ul>
+                  <li>
+                    <strong>Orquestación:</strong> Gestiona automáticamente los
+                    contenedores
+                  </li>
+                  <li>
+                    <strong>Auto-escalado:</strong> Ajusta el número de
+                    contenedores según la carga
+                  </li>
+                  <li>
+                    <strong>Auto-reparación:</strong> Reemplaza contenedores que
+                    fallan
+                  </li>
+                  <li>
+                    <strong>Balanceo de carga:</strong> Distribuye el tráfico
+                    entre contenedores
+                  </li>
+                  <li>
+                    <strong>Despliegue continuo:</strong> Facilita
+                    actualizaciones sin tiempo de inactividad
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="card bg-dark border border-success">
+              <div class="card-header bg-black border-bottom border-success">
+                <h4 class="mb-0 fw-bold">COMANDOS BÁSICOS DE DOCKER</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-dark table-striped table-bordered border-success"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Comando</th>
+                        <th>Descripción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>docker pull [imagen]</code></td>
+                        <td>Descarga una imagen de Docker Hub</td>
+                      </tr>
+                      <tr>
+                        <td><code>docker build -t [nombre] .</code></td>
+                        <td>Construye una imagen a partir de un Dockerfile</td>
+                      </tr>
+                      <tr>
+                        <td><code>docker run [opciones] [imagen]</code></td>
+                        <td>
+                          Crea y ejecuta un contenedor a partir de una imagen
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><code>docker ps</code></td>
+                        <td>Lista los contenedores en ejecución</td>
+                      </tr>
+                      <tr>
+                        <td><code>docker stop [contenedor]</code></td>
+                        <td>Detiene un contenedor en ejecución</td>
+                      </tr>
+                      <tr>
+                        <td><code>docker rm [contenedor]</code></td>
+                        <td>Elimina un contenedor</td>
+                      </tr>
+                      <tr>
+                        <td><code>docker images</code></td>
+                        <td>Lista las imágenes disponibles localmente</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-success py-4 border-top border-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">DavoDev</h5>
+            <p>
+              Un recurso educativo para comprender las tecnologías web actuales,
+              incluyendo microservicios, contenedores y APIs.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">ENLACES</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-success">Inicio</a></li>
+              <li><a href="web-apis.html" class="text-success">Web APIs</a></li>
+              <li>
+                <a href="microservicios.html" class="text-success"
+                  >Microservicios</a
+                >
+              </li>
+              <li>
+                <a href="desarrollo-api.html" class="text-success"
+                  >Desarrollo de Web API</a
+                >
+              </li>
+              <li>
+                <a href="contenedores.html" class="text-success"
+                  >Contenedores</a
+                >
+              </li>
+              <li>
+                <a href="nube.html" class="text-success"
+                  >Aplicaciones en la Nube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">RECURSOS</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://www.ibm.com/mx-es/topics/microservices"
+                  class="text-success"
+                  target="_blank"
+                  >IBM: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://aws.amazon.com/es/microservices/"
+                  class="text-success"
+                  target="_blank"
+                  >AWS: Microservicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://cloud.google.com/learn/what-are-containers"
+                  class="text-success"
+                  target="_blank"
+                  >Google Cloud: Contenedores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kubernetes.io/es/docs/concepts/architecture/"
+                  class="text-success"
+                  target="_blank"
+                  >Kubernetes: Arquitectura</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.docker.com/"
+                  class="text-success"
+                  target="_blank"
+                  >Docker</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 border-success" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2023 DavoDev. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-success me-3">Política de privacidad</a>
+            <a href="#" class="text-success">Términos de uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
