@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DavoDev - Tecnologías Web Modernas</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome para iconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body class="bg-dark text-success">
+    <!-- Barra de navegación fija -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-success fixed-top"
     >
@@ -62,6 +65,7 @@
       </div>
     </nav>
 
+    <!-- Encabezado de página con jumbotron -->
     <header class="bg-black text-success py-5 border-bottom border-success">
       <div class="container py-4">
         <div class="row align-items-center">
@@ -72,6 +76,7 @@
               aplicaciones distribuidas
             </p>
 
+            <!-- Badges -->
             <div class="mb-4">
               <span class="badge bg-success me-2 mb-2">Microservicios</span>
               <span class="badge bg-success me-2 mb-2">Docker</span>
@@ -91,6 +96,14 @@
                 class="btn btn-outline-success btn-lg px-4"
                 >Contacto</a
               >
+              <button
+                type="button"
+                class="btn btn-success btn-lg px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#tecnologiasModal"
+              >
+                Ver Tecnologías
+              </button>
             </div>
           </div>
           <div class="col-lg-4 d-none d-lg-block text-center">
@@ -111,6 +124,7 @@
       </div>
     </header>
 
+    <!-- Carrusel de tecnologías -->
     <section class="py-5 bg-dark">
       <div class="container">
         <h3 class="fw-bold mb-4 text-center border-bottom border-success pb-2">
@@ -237,8 +251,10 @@
       </div>
     </section>
 
+    <!-- Contenido principal -->
     <section class="py-5">
       <div class="container">
+        <!-- Tarjetas con estado de progreso -->
         <div class="row mb-5">
           <div class="col-12">
             <h3
@@ -247,6 +263,7 @@
               ESTADO DEL PROYECTO
             </h3>
 
+            <!-- Alerta de novedades reubicada aquí -->
             <div
               class="alert alert-success border-success bg-black mb-4"
               role="alert"
@@ -372,6 +389,7 @@
               TECNOLOGÍAS DESTACADAS
             </h3>
 
+            <!-- List Group -->
             <div class="list-group mb-4">
               <a
                 href="web-apis.html"
@@ -423,6 +441,7 @@
               </a>
             </div>
 
+            <!-- Placeholder para contenido en carga -->
             <div class="card bg-dark border border-success">
               <div class="card-header bg-black border-bottom border-success">
                 <h5 class="mb-0">Próximamente</h5>
@@ -452,6 +471,7 @@
               ARTÍCULOS RECIENTES
             </h3>
 
+            <!-- Cards con bordes -->
             <div class="card mb-3 bg-dark border border-success">
               <div
                 class="card-header bg-black border-bottom border-success d-flex justify-content-between align-items-center"
@@ -515,6 +535,7 @@
               </div>
             </div>
 
+            <!-- Paginación -->
             <nav aria-label="Navegación de artículos">
               <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
@@ -555,6 +576,7 @@
           </div>
         </div>
 
+        <!-- Sección de tecnologías relacionadas con tooltips -->
         <div class="row mt-5">
           <div class="col-12">
             <h3
@@ -602,6 +624,7 @@
       </div>
     </section>
 
+    <!-- Sección de estadísticas con badges y progress -->
     <section class="py-5 bg-black border-top border-bottom border-success">
       <div class="container">
         <h3 class="fw-bold mb-4 text-center">ESTADÍSTICAS DEL PROYECTO</h3>
@@ -679,6 +702,7 @@
       </div>
     </section>
 
+    <!-- Sección de suscripción con tarjeta -->
     <section class="py-5">
       <div class="container">
         <div class="row justify-content-center">
@@ -715,6 +739,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-black text-success py-4 border-top border-success">
       <div class="container">
         <div class="row">
@@ -813,6 +838,113 @@
       </div>
     </footer>
 
+    <!-- Ventana Modal -->
+    <div
+      class="modal fade"
+      id="tecnologiasModal"
+      tabindex="-1"
+      aria-labelledby="tecnologiasModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark border border-success">
+          <div class="modal-header bg-black border-bottom border-success">
+            <h5 class="modal-title text-success" id="tecnologiasModalLabel">
+              Tecnologías Web Modernas
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card bg-black border border-success h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-success">Microservicios</h5>
+                    <p class="card-text">
+                      Los microservicios son un enfoque arquitectónico y
+                      organizativo para el desarrollo de software donde el
+                      software está compuesto por pequeños servicios
+                      independientes que se comunican a través de APIs bien
+                      definidas.
+                    </p>
+                    <a
+                      href="microservicios.html"
+                      class="btn btn-outline-success"
+                      >Explorar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card bg-black border border-success h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-success">Contenedores</h5>
+                    <p class="card-text">
+                      Los contenedores son unidades ejecutables de software
+                      donde el código de la aplicación se empaqueta, junto con
+                      sus bibliotecas y dependencias, de manera que se puede
+                      ejecutar en cualquier entorno.
+                    </p>
+                    <a href="contenedores.html" class="btn btn-outline-success"
+                      >Explorar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card bg-black border border-success h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-success">Web APIs</h5>
+                    <p class="card-text">
+                      Las Web APIs son interfaces de programación de
+                      aplicaciones para servidores web o navegadores web, que
+                      permiten la comunicación entre diferentes sistemas de
+                      software.
+                    </p>
+                    <a href="web-apis.html" class="btn btn-outline-success"
+                      >Explorar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card bg-black border border-success h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-success">Cloud Computing</h5>
+                    <p class="card-text">
+                      El Cloud Computing es la entrega de servicios informáticos
+                      a través de Internet, incluyendo servidores,
+                      almacenamiento, bases de datos, redes, software y
+                      análisis.
+                    </p>
+                    <a href="nube.html" class="btn btn-outline-success"
+                      >Explorar</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black border-top border-success">
+            <button
+              type="button"
+              class="btn btn-outline-success"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <a href="contacto.html" class="btn btn-success">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
